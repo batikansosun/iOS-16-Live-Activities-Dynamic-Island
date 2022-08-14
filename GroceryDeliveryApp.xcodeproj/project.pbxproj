@@ -1,0 +1,528 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		13BBEA6428A7DD5D00FB1686 /* GroceryDeliveryAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13BBEA6328A7DD5D00FB1686 /* GroceryDeliveryAppApp.swift */; };
+		13BBEA6628A7DD5D00FB1686 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13BBEA6528A7DD5D00FB1686 /* ContentView.swift */; };
+		13BBEA6828A7DD5D00FB1686 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13BBEA6728A7DD5D00FB1686 /* Assets.xcassets */; };
+		13BBEA6B28A7DD5D00FB1686 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13BBEA6A28A7DD5D00FB1686 /* Preview Assets.xcassets */; };
+		13BBEA7828A7DDA100FB1686 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13BBEA7728A7DDA100FB1686 /* WidgetKit.framework */; };
+		13BBEA7A28A7DDA100FB1686 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13BBEA7928A7DDA100FB1686 /* SwiftUI.framework */; };
+		13BBEA7D28A7DDA100FB1686 /* DeliveryTrackWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13BBEA7C28A7DDA100FB1686 /* DeliveryTrackWidget.swift */; };
+		13BBEA7F28A7DDA200FB1686 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13BBEA7E28A7DDA200FB1686 /* Assets.xcassets */; };
+		13BBEA8328A7DDA200FB1686 /* DeliveryTrackWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 13BBEA7528A7DDA100FB1686 /* DeliveryTrackWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		13BBEA8928A7DEAB00FB1686 /* GroceryDeliveryAppAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13BBEA8828A7DEAB00FB1686 /* GroceryDeliveryAppAttributes.swift */; };
+		13BBEA8A28A7DEAB00FB1686 /* GroceryDeliveryAppAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13BBEA8828A7DEAB00FB1686 /* GroceryDeliveryAppAttributes.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		13BBEA8128A7DDA200FB1686 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 13BBEA5828A7DD5D00FB1686 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 13BBEA7428A7DDA100FB1686;
+			remoteInfo = DeliveryTrackWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		13BBEA8728A7DDA200FB1686 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				13BBEA8328A7DDA200FB1686 /* DeliveryTrackWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		13BBEA6028A7DD5D00FB1686 /* GroceryDeliveryApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GroceryDeliveryApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13BBEA6328A7DD5D00FB1686 /* GroceryDeliveryAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryDeliveryAppApp.swift; sourceTree = "<group>"; };
+		13BBEA6528A7DD5D00FB1686 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		13BBEA6728A7DD5D00FB1686 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		13BBEA6A28A7DD5D00FB1686 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		13BBEA7528A7DDA100FB1686 /* DeliveryTrackWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = DeliveryTrackWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		13BBEA7728A7DDA100FB1686 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		13BBEA7928A7DDA100FB1686 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		13BBEA7C28A7DDA100FB1686 /* DeliveryTrackWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryTrackWidget.swift; sourceTree = "<group>"; };
+		13BBEA7E28A7DDA200FB1686 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		13BBEA8028A7DDA200FB1686 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		13BBEA8828A7DEAB00FB1686 /* GroceryDeliveryAppAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryDeliveryAppAttributes.swift; sourceTree = "<group>"; };
+		13BBEA8E28A7FAE000FB1686 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		13BBEA5D28A7DD5D00FB1686 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13BBEA7228A7DDA100FB1686 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13BBEA7A28A7DDA100FB1686 /* SwiftUI.framework in Frameworks */,
+				13BBEA7828A7DDA100FB1686 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		13BBEA5728A7DD5D00FB1686 = {
+			isa = PBXGroup;
+			children = (
+				13BBEA6228A7DD5D00FB1686 /* GroceryDeliveryApp */,
+				13BBEA7B28A7DDA100FB1686 /* DeliveryTrackWidget */,
+				13BBEA7628A7DDA100FB1686 /* Frameworks */,
+				13BBEA6128A7DD5D00FB1686 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		13BBEA6128A7DD5D00FB1686 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				13BBEA6028A7DD5D00FB1686 /* GroceryDeliveryApp.app */,
+				13BBEA7528A7DDA100FB1686 /* DeliveryTrackWidgetExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		13BBEA6228A7DD5D00FB1686 /* GroceryDeliveryApp */ = {
+			isa = PBXGroup;
+			children = (
+				13BBEA8E28A7FAE000FB1686 /* Info.plist */,
+				13BBEA6328A7DD5D00FB1686 /* GroceryDeliveryAppApp.swift */,
+				13BBEA6528A7DD5D00FB1686 /* ContentView.swift */,
+				13BBEA8828A7DEAB00FB1686 /* GroceryDeliveryAppAttributes.swift */,
+				13BBEA6728A7DD5D00FB1686 /* Assets.xcassets */,
+				13BBEA6928A7DD5D00FB1686 /* Preview Content */,
+			);
+			path = GroceryDeliveryApp;
+			sourceTree = "<group>";
+		};
+		13BBEA6928A7DD5D00FB1686 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				13BBEA6A28A7DD5D00FB1686 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		13BBEA7628A7DDA100FB1686 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				13BBEA7728A7DDA100FB1686 /* WidgetKit.framework */,
+				13BBEA7928A7DDA100FB1686 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		13BBEA7B28A7DDA100FB1686 /* DeliveryTrackWidget */ = {
+			isa = PBXGroup;
+			children = (
+				13BBEA7C28A7DDA100FB1686 /* DeliveryTrackWidget.swift */,
+				13BBEA7E28A7DDA200FB1686 /* Assets.xcassets */,
+				13BBEA8028A7DDA200FB1686 /* Info.plist */,
+			);
+			path = DeliveryTrackWidget;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		13BBEA5F28A7DD5D00FB1686 /* GroceryDeliveryApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13BBEA6E28A7DD5D00FB1686 /* Build configuration list for PBXNativeTarget "GroceryDeliveryApp" */;
+			buildPhases = (
+				13BBEA5C28A7DD5D00FB1686 /* Sources */,
+				13BBEA5D28A7DD5D00FB1686 /* Frameworks */,
+				13BBEA5E28A7DD5D00FB1686 /* Resources */,
+				13BBEA8728A7DDA200FB1686 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				13BBEA8228A7DDA200FB1686 /* PBXTargetDependency */,
+			);
+			name = GroceryDeliveryApp;
+			productName = GroceryDeliveryApp;
+			productReference = 13BBEA6028A7DD5D00FB1686 /* GroceryDeliveryApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		13BBEA7428A7DDA100FB1686 /* DeliveryTrackWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13BBEA8428A7DDA200FB1686 /* Build configuration list for PBXNativeTarget "DeliveryTrackWidgetExtension" */;
+			buildPhases = (
+				13BBEA7128A7DDA100FB1686 /* Sources */,
+				13BBEA7228A7DDA100FB1686 /* Frameworks */,
+				13BBEA7328A7DDA100FB1686 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DeliveryTrackWidgetExtension;
+			productName = DeliveryTrackWidgetExtension;
+			productReference = 13BBEA7528A7DDA100FB1686 /* DeliveryTrackWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		13BBEA5828A7DD5D00FB1686 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					13BBEA5F28A7DD5D00FB1686 = {
+						CreatedOnToolsVersion = 14.0;
+					};
+					13BBEA7428A7DDA100FB1686 = {
+						CreatedOnToolsVersion = 14.0;
+					};
+				};
+			};
+			buildConfigurationList = 13BBEA5B28A7DD5D00FB1686 /* Build configuration list for PBXProject "GroceryDeliveryApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 13BBEA5728A7DD5D00FB1686;
+			productRefGroup = 13BBEA6128A7DD5D00FB1686 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				13BBEA5F28A7DD5D00FB1686 /* GroceryDeliveryApp */,
+				13BBEA7428A7DDA100FB1686 /* DeliveryTrackWidgetExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		13BBEA5E28A7DD5D00FB1686 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13BBEA6B28A7DD5D00FB1686 /* Preview Assets.xcassets in Resources */,
+				13BBEA6828A7DD5D00FB1686 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13BBEA7328A7DDA100FB1686 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13BBEA7F28A7DDA200FB1686 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		13BBEA5C28A7DD5D00FB1686 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13BBEA6628A7DD5D00FB1686 /* ContentView.swift in Sources */,
+				13BBEA8928A7DEAB00FB1686 /* GroceryDeliveryAppAttributes.swift in Sources */,
+				13BBEA6428A7DD5D00FB1686 /* GroceryDeliveryAppApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13BBEA7128A7DDA100FB1686 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13BBEA8A28A7DEAB00FB1686 /* GroceryDeliveryAppAttributes.swift in Sources */,
+				13BBEA7D28A7DDA100FB1686 /* DeliveryTrackWidget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		13BBEA8228A7DDA200FB1686 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 13BBEA7428A7DDA100FB1686 /* DeliveryTrackWidgetExtension */;
+			targetProxy = 13BBEA8128A7DDA200FB1686 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		13BBEA6C28A7DD5D00FB1686 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		13BBEA6D28A7DD5D00FB1686 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		13BBEA6F28A7DD5D00FB1686 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"GroceryDeliveryApp/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GroceryDeliveryApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.batikan.GroceryDeliveryApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		13BBEA7028A7DD5D00FB1686 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"GroceryDeliveryApp/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GroceryDeliveryApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.batikan.GroceryDeliveryApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		13BBEA8528A7DDA200FB1686 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DeliveryTrackWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = DeliveryTrackWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.batikan.GroceryDeliveryApp.DeliveryTrackWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		13BBEA8628A7DDA200FB1686 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DeliveryTrackWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = DeliveryTrackWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.batikan.GroceryDeliveryApp.DeliveryTrackWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		13BBEA5B28A7DD5D00FB1686 /* Build configuration list for PBXProject "GroceryDeliveryApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13BBEA6C28A7DD5D00FB1686 /* Debug */,
+				13BBEA6D28A7DD5D00FB1686 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		13BBEA6E28A7DD5D00FB1686 /* Build configuration list for PBXNativeTarget "GroceryDeliveryApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13BBEA6F28A7DD5D00FB1686 /* Debug */,
+				13BBEA7028A7DD5D00FB1686 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		13BBEA8428A7DDA200FB1686 /* Build configuration list for PBXNativeTarget "DeliveryTrackWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13BBEA8528A7DDA200FB1686 /* Debug */,
+				13BBEA8628A7DDA200FB1686 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 13BBEA5828A7DD5D00FB1686 /* Project object */;
+}
