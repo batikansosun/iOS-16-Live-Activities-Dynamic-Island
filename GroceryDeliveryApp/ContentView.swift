@@ -8,15 +8,17 @@
 import SwiftUI
 import ActivityKit
 
+@available(iOS 16.1, *)
 struct ContentView: View {
     @State var  activities = Activity<GroceryDeliveryAppAttributes>.activities
     var body: some View {
         NavigationView {
             Form {
                 Section {
-                    Text("Create an activity to start a live activity on the lock screen.")
+                    Text("Create an activity to start a live activity")
                     Button(action: {
                         createActivity()
+                        listAllDeliveries()
                     }) {
                         Text("Create Activity").font(.headline)
                     }.tint(.green)
@@ -36,28 +38,7 @@ struct ContentView: View {
                     if !activities.isEmpty {
                         Text("Live Activities")
                     }
-                    List(activities) { activity in
-                        let courierName = activity.contentState.courierName
-                        let deliveryTime = activity.contentState.deliveryTime.formatted()
-                        HStack(alignment: .center) {
-                            Text(courierName)
-                            Text(deliveryTime.description)
-                            Text("update")
-                                .font(.headline)
-                                .foregroundColor(.green)
-                                .onTapGesture {
-                                    update(activity: activity)
-                                    listAllDeliveries()
-                                }
-                            Text("end")
-                                .font(.headline)
-                                .foregroundColor(.green)
-                                .onTapGesture {
-                                    end(activity: activity)
-                                    listAllDeliveries()
-                                }
-                        }
-                    }
+                    activitiesView()
                 }
             }
             .navigationTitle("Welcome!")
@@ -67,13 +48,23 @@ struct ContentView: View {
     }
     
     func createActivity() {
+        let center = UNUserNotificationCenter.current()
+        center.requestAuthorization(options: [.alert, .sound, .badge]) { granted, error in
+            
+            if let error = error {
+                // Handle the error here.
+            }
+            
+            // Enable or disable features based on the authorization.
+        }
+        
         let attributes = GroceryDeliveryAppAttributes(numberOfGroceyItems: 12)
         let contentState = GroceryDeliveryAppAttributes.LiveDeliveryData(courierName: "Mike", deliveryTime: .now + 120)
         do {
             let _ = try Activity<GroceryDeliveryAppAttributes>.request(
                 attributes: attributes,
                 contentState: contentState,
-                pushType: nil)
+                pushType: .token)
         } catch (let error) {
             print(error.localizedDescription)
         }
@@ -105,3 +96,36 @@ struct ContentView: View {
     }
 }
 
+@available(iOS 16.1, *)
+extension ContentView {
+    
+    func activitiesView() -> some View {
+        var body: some View {
+            ScrollView {
+                ForEach(activities, id: \.id) { activity in
+                    let courierName = activity.contentState.courierName
+                    let deliveryTime = activity.contentState.deliveryTime
+                    HStack(alignment: .center) {
+                        Text(courierName)
+                        Text(deliveryTime, style: .timer)
+                        Text("update")
+                            .font(.headline)
+                            .foregroundColor(.green)
+                            .onTapGesture {
+                                update(activity: activity)
+                                listAllDeliveries()
+                            }
+                        Text("end")
+                            .font(.headline)
+                            .foregroundColor(.green)
+                            .onTapGesture {
+                                end(activity: activity)
+                                listAllDeliveries()
+                            }
+                    }
+                }
+            }
+        }
+        return body
+    }
+}

@@ -45,6 +45,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1352BAF228BF8028004CD5E7 /* GroceryDeliveryApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GroceryDeliveryApp.entitlements; sourceTree = "<group>"; };
+		1352BAF328BF82B6004CD5E7 /* DeliveryTrackWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DeliveryTrackWidgetExtension.entitlements; sourceTree = "<group>"; };
 		13BBEA6028A7DD5D00FB1686 /* GroceryDeliveryApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GroceryDeliveryApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13BBEA6328A7DD5D00FB1686 /* GroceryDeliveryAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryDeliveryAppApp.swift; sourceTree = "<group>"; };
 		13BBEA6528A7DD5D00FB1686 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 		13BBEA5728A7DD5D00FB1686 = {
 			isa = PBXGroup;
 			children = (
+				1352BAF328BF82B6004CD5E7 /* DeliveryTrackWidgetExtension.entitlements */,
 				13BBEA6228A7DD5D00FB1686 /* GroceryDeliveryApp */,
 				13BBEA7B28A7DDA100FB1686 /* DeliveryTrackWidget */,
 				13BBEA7628A7DDA100FB1686 /* Frameworks */,
@@ -102,6 +105,7 @@
 		13BBEA6228A7DD5D00FB1686 /* GroceryDeliveryApp */ = {
 			isa = PBXGroup;
 			children = (
+				1352BAF228BF8028004CD5E7 /* GroceryDeliveryApp.entitlements */,
 				13BBEA8E28A7FAE000FB1686 /* Info.plist */,
 				13BBEA6328A7DD5D00FB1686 /* GroceryDeliveryAppApp.swift */,
 				13BBEA6528A7DD5D00FB1686 /* ContentView.swift */,
@@ -386,10 +390,14 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = GroceryDeliveryApp/GroceryDeliveryApp.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"GroceryDeliveryApp/Preview Content\"";
+				DEVELOPMENT_TEAM = 8E9B28XWEK;
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = GroceryDeliveryApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -402,8 +410,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.batikan.GroceryDeliveryApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.batikan.LiveActivityKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -416,10 +425,14 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = GroceryDeliveryApp/GroceryDeliveryApp.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"GroceryDeliveryApp/Preview Content\"";
+				DEVELOPMENT_TEAM = 8E9B28XWEK;
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = GroceryDeliveryApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -432,8 +445,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.batikan.GroceryDeliveryApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.batikan.LiveActivityKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -445,8 +459,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = DeliveryTrackWidgetExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8E9B28XWEK;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = DeliveryTrackWidget/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = DeliveryTrackWidget;
@@ -457,7 +473,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.batikan.GroceryDeliveryApp.DeliveryTrackWidget;
+				PRODUCT_BUNDLE_IDENTIFIER = com.batikan.LiveActivityKit.Widget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -471,8 +487,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = DeliveryTrackWidgetExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8E9B28XWEK;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = DeliveryTrackWidget/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = DeliveryTrackWidget;
@@ -483,7 +501,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.batikan.GroceryDeliveryApp.DeliveryTrackWidget;
+				PRODUCT_BUNDLE_IDENTIFIER = com.batikan.LiveActivityKit.Widget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;

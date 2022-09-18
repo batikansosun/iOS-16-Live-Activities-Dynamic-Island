@@ -8,7 +8,7 @@
 import SwiftUI
 import ActivityKit
 
-struct GroceryDeliveryAppAttributes: ActivityAttributes {
+struct GroceryDeliveryAppAttributes: ActivityAttributes, Identifiable {
     public typealias LiveDeliveryData = ContentState
 
     public struct ContentState: Codable, Hashable {
@@ -16,6 +16,7 @@ struct GroceryDeliveryAppAttributes: ActivityAttributes {
         var deliveryTime: Date
     }
     var numberOfGroceyItems: Int
+    var id = UUID()
 }
 
 
