@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1314F23128F46ACA00FD0AC7 /* ActivityKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1314F23028F46AC900FD0AC7 /* ActivityKit.framework */; };
 		13BBEA6428A7DD5D00FB1686 /* GroceryDeliveryAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13BBEA6328A7DD5D00FB1686 /* GroceryDeliveryAppApp.swift */; };
 		13BBEA6628A7DD5D00FB1686 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13BBEA6528A7DD5D00FB1686 /* ContentView.swift */; };
 		13BBEA6828A7DD5D00FB1686 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13BBEA6728A7DD5D00FB1686 /* Assets.xcassets */; };
@@ -45,6 +46,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1314F23028F46AC900FD0AC7 /* ActivityKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ActivityKit.framework; path = System/Library/Frameworks/ActivityKit.framework; sourceTree = SDKROOT; };
 		1352BAF228BF8028004CD5E7 /* GroceryDeliveryApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GroceryDeliveryApp.entitlements; sourceTree = "<group>"; };
 		1352BAF328BF82B6004CD5E7 /* DeliveryTrackWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DeliveryTrackWidgetExtension.entitlements; sourceTree = "<group>"; };
 		13BBEA6028A7DD5D00FB1686 /* GroceryDeliveryApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GroceryDeliveryApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -67,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1314F23128F46ACA00FD0AC7 /* ActivityKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -127,6 +130,7 @@
 		13BBEA7628A7DDA100FB1686 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1314F23028F46AC900FD0AC7 /* ActivityKit.framework */,
 				13BBEA7728A7DDA100FB1686 /* WidgetKit.framework */,
 				13BBEA7928A7DDA100FB1686 /* SwiftUI.framework */,
 			);
